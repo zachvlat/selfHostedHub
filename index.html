@@ -13,13 +13,17 @@
 
 </head>
 
-<body style=" background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); ">
+<body>
 
     <style>
         * {
             margin: 0;
             background-image: url "https://images.pexels.com/photos/3105407/pexels-photo-3105407.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260";
+        }
+
+        body {
+            background: rgb(2, 0, 36);
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
         }
 
         @font-face {
@@ -34,6 +38,8 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 
         h1 {
             font-family: "Outrun";
+            color: aqua;
+            text-transform: uppercase;
         }
 
         .glow {
@@ -45,7 +51,14 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
             animation: glow 1s ease-in-out infinite alternate;
         }
 
+        .card {
+            margin-right: 2px;
+        }
 
+        img {
+            width: 500;
+            height: 500;
+        }
 
         @-webkit-keyframes glow {
             from {
@@ -54,16 +67,18 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
             }
 
             to {
-                text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+                text-shadow: 0 0 20px rgb(197, 188, 188), 0 0 30px #ff4da6, 0 0 40px #ff4da6,
                     0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
             }
         }
     </style>
+
     <header style="text-align: center;">
-        <h1 class="glow" style="color: aqua;text-transform: uppercase;">Welcome to ZatsNET Hub</h1>
+        <h1 class="glow">ZatsNET Hub</h1>
+        <br>
         <ul class="nav justify-content-center">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="https://www.instagram.com/zach_vlat/">Instagram</a>
+                <a class="nav-link active" href="mailto:zatsando@protonmail.com">Email</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link active" href="https://github.com/zachvlat">GitHub</a>
@@ -74,6 +89,8 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
         </ul>
     </header>
 
+    <br>
+
     <main style="display: flex;">
         <div class="card" style="width: 18rem;">
             <img src="https://phi.web-republic.de/blog/wp-content/uploads/2018/08/nextcloud-logo-background.png"
@@ -83,10 +100,9 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
                 <p class="card-text">Nextcloud is open source file sync and share software for everyone from individuals
                     operating the free Nextcloud Server in the privacy of their own home, to large enterprises and
                     service providers supported by the Nextcloud Enterprise Subscription.</p>
-                <a href="http://192.168.1.111:81/index.php" class="btn btn-primary">Click to go</a>
+                <a href="http://192.168.1.111:81/index.php" class="btn btn-primary">Click me!</a>
             </div>
         </div>
-
         <div class="card" style="width: 18rem;">
             <img src="https://www.aneddoticamagazine.com/wp-content/uploads/Pi-hole.jpg" class="rounded float-end"
                 alt="hole">
@@ -95,7 +111,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
                 <p class="card-text">Pi-hole is a Linux network-level advertisement and Internet tracker blocking
                     application which acts as a DNS sinkhole and optionally a DHCP server, intended for use on a private
                     network. It is designed for low-power embedded devices with network capability.</p>
-                <a href="http://192.168.1.111/admin" class="btn btn-primary">Click to go</a>
+                <a href="http://192.168.1.111/admin" class="btn btn-primary">Click me!</a>
             </div>
         </div>
     </main>
