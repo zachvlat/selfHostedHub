@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  background-image: url
+    "https://images.pexels.com/photos/3105407/pexels-photo-3105407.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260";
+}
+
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+@font-face {
+  font-family: "Outrun";
+  src: url("https://infamoustrey.github.io/outrun-css/fonts/outrun.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "VT323";
+  src: url("https://infamoustrey.github.io/outrun-css/fonts/vt323.woff")
+    format("woff");
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  font-family: "Outrun";
+  color: aqua;
+  text-transform: uppercase;
+}
+
+.glow {
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.card {
+  margin-right: 2px;
+  width: 18rem;
+}
+
+img {
+  width: 500;
+  height: 500;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #333, 0 0 20px #333, 0 0 30px #e60073,
+      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px rgb(197, 188, 188), 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+#twitch-embed {
+  text-align: center;
+}
