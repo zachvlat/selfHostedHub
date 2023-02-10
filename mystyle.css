@@ -9,8 +9,8 @@ body {
   background: linear-gradient(
     90deg,
     rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
+    rgb(41, 41, 51) 35%,
+    rgb(83, 83, 83) 100%
   );
 }
 
@@ -50,11 +50,6 @@ h1 {
   width: 18rem;
 }
 
-img {
-  width: 500;
-  height: 500;
-}
-
 @-webkit-keyframes glow {
   from {
     text-shadow: 0 0 10px #333, 0 0 20px #333, 0 0 30px #e60073,
@@ -70,8 +65,5 @@ img {
 main {
   display: flex;
   justify-content: center;
-}
-
-#twitch-embed {
-  text-align: center;
+  flex-wrap: wrap;
 }
