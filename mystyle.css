@@ -48,6 +48,7 @@ h1 {
 .card {
   margin-right: 2px;
   width: 18rem;
+  height: 550px;
 }
 
 @-webkit-keyframes glow {
